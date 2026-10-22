@@ -1,0 +1,38 @@
+name: Generate Ferrari contribution snake
+
+on:
+  schedule:
+    # Every day at 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake animations
+        uses: Platane/snk@v3
+        with:
+          github_user_name: AlirezaKarimiAR
+          outputs: |
+            dist/github-snake.svg?color_snake=#FFF200&color_dots=#161616,#5C0000,#A30000,#E10600,#FF2800
+            dist/github-snake-dark.svg?color_snake=#FFF200&color_dots=#0A0A0A,#5C0000,#A30000,#E10600,#FF2800
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & push snake SVGs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Ferrari contribution snake"
+          file_pattern: dist/*.svg

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Contribution snake placeholder">
+  <rect width="720" height="160" rx="12" fill="#0A0A0A" stroke="#E10600" stroke-width="1.5"/>
+  <text x="360" y="68" text-anchor="middle" fill="#FFF200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Contribution snake loading&</text>
+  <text x="360" y="98" text-anchor="middle" fill="#EDEDED" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" opacity="0.85">Run the GitHub Action once  yellow snake, red sectors</text>
+</svg>
