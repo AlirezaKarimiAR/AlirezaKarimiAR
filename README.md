@@ -1,20 +1,22 @@
-<!--
-  Profile README — Ferrari / F1 theme for AlirezaKarimiAR
-  Snake: dist/*.svg (demo now → replaced by Actions after first workflow run)
--->
+<!-- Ferrari / F1 profile README — AlirezaKarimiAR -->
+
+<!-- Hero: HTML text first so it never breaks if an SVG fails to load -->
+<p align="center">
+  <img src="./assets/start-lights.svg" alt="F1 start lights" width="420" />
+</p>
+
+<h1 align="center">Alireza Karimi</h1>
 
 <p align="center">
-  <img src="assets/hero-banner.svg" alt="Alireza Karimi — Backend Developer | Race Engineer for APIs" width="900" />
+  <b>Backend Developer · Race Engineer for APIs</b>
 </p>
 
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=900&color=E10600&center=true&vCenter=true&width=640&height=45&lines=Building+APIs+at+race+pace;Pit+stops+for+bugs+-+Podiums+for+uptime;.NET+%7C+Go+%7C+Python" alt="Typing animation" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=900&color=E10600&center=true&vCenter=true&width=640&height=45&lines=Building+APIs+at+race+pace;Pit+stops+for+bugs+-+Podiums+for+uptime;.NET+%7C+Go+%7C+Python" alt="Building APIs at race pace" />
 </p>
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
 
 ## About the Driver
@@ -24,7 +26,7 @@ I build the systems that keep the race running — **APIs, services, and databas
 Like a race engineer on the pit wall, I care about **latency, reliability, and clean data paths**. Backend is my grid position; every commit is another lap toward something that holds up under pressure.
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
 
 ## Telemetry — Tech Stack
@@ -51,7 +53,7 @@ Like a race engineer on the pit wall, I care about **latency, reliability, and c
 </p>
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
 
 ## Contribution Snake — On Track
@@ -61,15 +63,15 @@ Like a race engineer on the pit wall, I care about **latency, reliability, and c
 </p>
 
 <p align="center">
-  <img src="dist/github-snake.svg" alt="Ferrari contribution snake animation" width="100%" />
+  <img src="./dist/github-snake.svg" alt="Ferrari contribution snake" width="100%" />
 </p>
 
 <p align="center">
-  <sub>Demo animation now · After you push &amp; run <code>Generate Ferrari contribution snake</code>, this becomes your real GitHub graph</sub>
+  <sub>After Actions runs <code>Generate Ferrari contribution snake</code>, this updates from your real contribution graph.</sub>
 </p>
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
 
 ## Lap Stats
@@ -86,7 +88,7 @@ Like a race engineer on the pit wall, I care about **latency, reliability, and c
 </p>
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
 
 ## Finish Line
@@ -106,5 +108,5 @@ Like a race engineer on the pit wall, I care about **latency, reliability, and c
 </p>
 
 <p align="center">
-  <img src="assets/checkered.svg" alt="" width="720" />
+  <img src="./assets/checkered.svg" alt="checkered flag" width="720" />
 </p>
