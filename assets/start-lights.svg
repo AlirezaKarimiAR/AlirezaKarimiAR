@@ -1,11 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="64" viewBox="0 0 420 64" role="img" aria-label="F1 start lights">
-  <rect width="420" height="64" rx="10" fill="#0A0A0A"/>
-  <rect x="0" y="0" width="420" height="3" fill="#E10600"/>
-  <circle cx="85" cy="28" r="12" fill="#E10600"/>
-  <circle cx="135" cy="28" r="12" fill="#E10600"/>
-  <circle cx="185" cy="28" r="12" fill="#E10600"/>
-  <circle cx="235" cy="28" r="12" fill="#E10600"/>
-  <circle cx="285" cy="28" r="12" fill="#E10600"/>
-  <circle cx="335" cy="28" r="12" fill="#2ECC40"/>
-  <text x="210" y="56" text-anchor="middle" fill="#FFF200" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="3">LIGHTS OUT</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="90" viewBox="0 0 480 90" role="img" aria-label="F1 start lights animation">
+  <!--
+    Sequence (loops every 5s):
+    0.0–0.4s  all OFF
+    0.4s      light 1 RED
+    0.8s      light 2 RED
+    1.2s      light 3 RED
+    1.6s      light 4 RED
+    2.0s      light 5 RED
+    2.0–2.8s  hold all RED
+    2.8s      ALL GREEN (race start)
+    2.8–4.0s  hold GREEN
+    4.0–5.0s  all OFF → loop
+  -->
+  <rect width="480" height="90" rx="12" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="480" height="3" fill="#E10600"/>
+
+  <!-- lamp housings -->
+  <g fill="#1a1a1a" stroke="#333" stroke-width="1">
+    <circle cx="80" cy="38" r="18"/>
+    <circle cx="150" cy="38" r="18"/>
+    <circle cx="220" cy="38" r="18"/>
+    <circle cx="290" cy="38" r="18"/>
+    <circle cx="360" cy="38" r="18"/>
+  </g>
+
+  <!-- Light 1 -->
+  <circle cx="80" cy="38" r="12" fill="#2a2a2a">
+    <animate attributeName="fill"
+      values="#2a2a2a;#2a2a2a;#E10600;#E10600;#E10600;#2ECC40;#2ECC40;#2a2a2a;#2a2a2a"
+      keyTimes="0;0.08;0.08;0.40;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Light 2 -->
+  <circle cx="150" cy="38" r="12" fill="#2a2a2a">
+    <animate attributeName="fill"
+      values="#2a2a2a;#2a2a2a;#2a2a2a;#E10600;#E10600;#2ECC40;#2ECC40;#2a2a2a;#2a2a2a"
+      keyTimes="0;0.08;0.16;0.16;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Light 3 -->
+  <circle cx="220" cy="38" r="12" fill="#2a2a2a">
+    <animate attributeName="fill"
+      values="#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#E10600;#E10600;#2ECC40;#2ECC40;#2a2a2a;#2a2a2a"
+      keyTimes="0;0.08;0.16;0.24;0.24;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Light 4 -->
+  <circle cx="290" cy="38" r="12" fill="#2a2a2a">
+    <animate attributeName="fill"
+      values="#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#E10600;#E10600;#2ECC40;#2ECC40;#2a2a2a;#2a2a2a"
+      keyTimes="0;0.08;0.16;0.24;0.32;0.32;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Light 5 -->
+  <circle cx="360" cy="38" r="12" fill="#2a2a2a">
+    <animate attributeName="fill"
+      values="#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#2a2a2a;#E10600;#E10600;#2ECC40;#2ECC40;#2a2a2a;#2a2a2a"
+      keyTimes="0;0.08;0.16;0.24;0.32;0.40;0.40;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- soft glow when green -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1;1;0;0" keyTimes="0;0.56;0.56;0.56;0.80;0.80;1" dur="5s" repeatCount="indefinite"/>
+    <circle cx="80" cy="38" r="16" fill="#2ECC40" opacity="0.25"/>
+    <circle cx="150" cy="38" r="16" fill="#2ECC40" opacity="0.25"/>
+    <circle cx="220" cy="38" r="16" fill="#2ECC40" opacity="0.25"/>
+    <circle cx="290" cy="38" r="16" fill="#2ECC40" opacity="0.25"/>
+    <circle cx="360" cy="38" r="16" fill="#2ECC40" opacity="0.25"/>
+  </g>
+
+  <text x="240" y="78" text-anchor="middle" fill="#FFF200" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3">
+    <animate attributeName="fill"
+      values="#555555;#555555;#FFF200;#FFF200;#2ECC40;#2ECC40;#555555;#555555"
+      keyTimes="0;0.40;0.40;0.56;0.56;0.80;0.80;1"
+      dur="5s" repeatCount="indefinite"/>
+    LIGHTS OUT
+  </text>
 </svg>

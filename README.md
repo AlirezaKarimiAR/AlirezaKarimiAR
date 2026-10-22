@@ -2,7 +2,7 @@
 
 <!-- Hero: HTML text first so it never breaks if an SVG fails to load -->
 <p align="center">
-  <img src="./assets/start-lights.svg" alt="F1 start lights" width="420" />
+  <img src="./assets/start-lights.gif" alt="F1 start lights — off, red one by one, then green" width="480" />
 </p>
 
 <h1 align="center">Alireza Karimi</h1>
